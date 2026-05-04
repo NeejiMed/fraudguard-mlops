@@ -22,4 +22,17 @@ clean:
 tree:
 	find . -maxdepth 4 -type d | sort
 
+.PHONY: install test lint format clean tree
+
+.PHONY: data-synthetic data-sample data-check
+
+data-synthetic:
+	. .venv/bin/activate && PYTHONPATH=. python scripts/create_synthetic_sample.py
+
+data-sample:
+	. .venv/bin/activate && PYTHONPATH=. python scripts/create_sample.py
+
+data-check:
+	. .venv/bin/activate && PYTHONPATH=. python scripts/check_data.py
+
 .PHONY: data-synthetic data-sample data-check
