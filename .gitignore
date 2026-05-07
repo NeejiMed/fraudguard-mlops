@@ -25,6 +25,9 @@ data/validation/*
 artifacts/
 mlruns/
 reports/**/*.html
+artifacts/*
+!artifacts/.gitkeep
+
 
 # OS / IDE
 .DS_Store

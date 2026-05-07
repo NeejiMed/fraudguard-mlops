@@ -46,4 +46,3 @@ def test_invalid_data_fails():
 
     with pytest.raises(pa.errors.SchemaError):
         schema.validate(df)
-        
