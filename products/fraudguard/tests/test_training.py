@@ -1,10 +1,8 @@
 import json
 
 from ci.quality_gates_import import import_check_metrics
-
 from products.fraudguard.training.train import train_model
 from scripts.create_synthetic_sample import create_synthetic_sample
-
 
 def test_train_model_creates_metrics(tmp_path, monkeypatch):
     data_path = tmp_path / "fraud_sample.parquet"
