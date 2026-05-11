@@ -1,4 +1,4 @@
-name: 03-model
+name: model
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
       - "contracts/**"
       - "scripts/**"
       - "ci/quality-gates/**"
-      - ".github/workflows/03-model.yml"
+      - ".github/workflows/model.yml"
   push:
     branches:
       - main
