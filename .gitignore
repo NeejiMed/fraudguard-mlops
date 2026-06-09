@@ -27,7 +27,11 @@ mlruns/
 reports/**/*.html
 artifacts/*
 !artifacts/.gitkeep
-
+artifacts/*
+reports/**/*.json
+reports/**/*.txt
+reports/**/*.png
+!reports/**/.gitkeep
 
 # OS / IDE
 .DS_Store
